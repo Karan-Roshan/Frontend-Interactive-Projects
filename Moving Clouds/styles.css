@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    height: 100vh;
+    position: relative;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.cloud {
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    animation-name: moveCloud;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+
+.cloudBubble1 {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    left: 30px
+}
+
+.cloudBubble2 {
+    width: 60px;
+    height: 60px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-150vw);
+    }
+    to {
+        transform: translateX(150vw);
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(150vw);
+    }
+    to {
+        transform: translateX(-150vw);
+    }
+}
