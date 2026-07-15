@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #e3edf7;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 50%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 75px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    font-weight: 600px;
+    font-size: 50px;
+}
+
+.distribution_container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skills {
+    width: 200px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.skill_percent {
+    width: 180px;
+    height: 180px;
+    /* background: cornflowerblue; */
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.outer {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+.inner {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#num1, #num2, #num3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 25px;
+}
+
+.HTML_Circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: htmlAnim 2s linear forwards;
+}
+
+.CSS_Circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: cssAnim 2s linear forwards;
+}
+
+.JS_Circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: jsAnim 2s linear forwards;
+}
+
+svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid red; */
+}
+
+@keyframes htmlAnim {
+    100% {
+        stroke-dashoffset: 345;
+    }
+}
+
+@keyframes cssAnim {
+    100% {
+        stroke-dashoffset: 220;
+    }
+}
+
+@keyframes jsAnim {
+    100% {
+        stroke-dashoffset: 435;
+    }
+}
+
+.skill_title {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.6;
+}
