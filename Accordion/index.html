@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frequently asked questions about JavaScript." />
+    <title>JavaScript FAQs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="page-shell">
+        <section class="faq-card" aria-labelledby="page-title">
+            <header class="hero">
+                <span class="eyebrow">JavaScript fundamentals</span>
+                <h1 id="page-title">Frequently asked questions</h1>
+                <p>
+                    Clear, practical answers to the JavaScript concepts developers
+                    encounter every day.
+                </p>
+            </header>
+
+            <div class="faq-list">
+                <article class="faq active">
+                    <button class="question" type="button" aria-expanded="true" aria-controls="answer-1">
+                        <span class="number">01</span>
+                        <span class="question-text">What is JavaScript?</span>
+
+                        <span class="icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="answer" id="answer-1">
+                        <div class="answer-content">
+                            <p>
+                                JavaScript is a high-level programming language used to create
+                                interactive, dynamic web applications. Alongside HTML and CSS,
+                                it is one of the core technologies of the web.
+                            </p>
+
+                            <p>
+                                It runs in browsers and on servers through Node.js, powering
+                                features such as form validation, animations, API calls, live
+                                updates, and responsive interfaces.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <button class="question" type="button" aria-expanded="false" aria-controls="answer-2">
+                        <span class="number">02</span>
+                        <span class="question-text">What is hoisting?</span>
+
+                        <span class="icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="answer" id="answer-2">
+                        <div class="answer-content">
+                            <p>
+                                Hoisting is JavaScript's behavior of processing declarations
+                                before executing code within their scope. Function declarations
+                                can be called before they appear in the source.
+                            </p>
+
+                            <p>
+                                <code>var</code> declarations are initialized as
+                                <code>undefined</code>; <code>let</code> and
+                                <code>const</code> are hoisted too, but cannot be accessed
+                                until their declaration is evaluated.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq">
+                    <button class="question" type="button" aria-expanded="false" aria-controls="answer-3">
+                        <span class="number">03</span>
+                        <span class="question-text">
+                            What is the Temporal Dead Zone?
+                        </span>
+
+                        <span class="icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="answer" id="answer-3">
+                        <div class="answer-content">
+                            <p>
+                                The Temporal Dead Zone (TDZ) is the period between entering a
+                                block scope and reaching the declaration of a
+                                <code>let</code> or <code>const</code> variable.
+                            </p>
+
+                            <p>
+                                Accessing the variable during this time throws a
+                                <code>ReferenceError</code>, helping prevent accidental use
+                                before initialization.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <footer>
+                Still curious? Keep exploring JavaScript, one concept at a time.
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
