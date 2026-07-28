@@ -2,9 +2,16 @@
 A classic Snake game built from scratch using vanilla JavaScript (ES Modules), HTML5, and CSS Grid — no frameworks, no libraries, no build tools required.
 
 ## Preview
-| Start of Game | Snake Growing |
-|:---:|:---:|
-| ![Snake game start screen showing the food and snake on a dark grid board](Gameplay Preview/Preview 1.png) | ![Snake game mid-play showing the snake grown to five segments](Gameplay Preview/Preview 2.png) |
+<table>
+  <tr>
+    <th>Start of Game</th>
+    <th>Snake Growing</th>
+  </tr>
+  <tr>
+    <td><img src="Gameplay Preview/Preview 1.png" alt="Snake game start screen showing the food and snake on a dark grid board" width="400"></td>
+    <td><img src="Gameplay Preview/Preview 2.png" alt="Snake game mid-play showing the snake grown to five segments" width="400"></td>
+  </tr>
+</table>
 
 
 ## Features
